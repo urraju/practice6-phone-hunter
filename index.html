@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daysi ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Phone Hunter Webpage</title>
+</head>
+<body>
+    <!-- header section  -->
+    <header class="w-full py-5 px-3 rounded-b-xl bg-[#0D6EFD0D]">
+         <!-- nav part  -->
+          <div class="w-9/12 mx-auto">
+            <nav class="flex items-center justify-between">
+                <h1 class="font-bold text-2xl">Hot Gadgets</h1>
+                <button class="px-6 py-2 text-white font-semibold bg-[#0D6EFD] rounded shadow-lg">Sign Up</button>
+             </nav>
+          </div>
+         <!-- nav end  -->
+         <!-- banner part  -->
+         <section class="w-9/12 mt-20 text-center mx-auto">
+             <div class=" space-y-7">
+            <h1 class="text-3xl lg:text-6xl  font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="text-lg text-[#706F6F]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+            <button class="px-6 py-2 text-white font-semibold bg-[#0D6EFD] rounded shadow-lg">Buy Now</button>
+             </div>
+             <!-- text end part  -->
+             <!-- image part  -->
+             <div class="mt-20 w-9/12 mx-auto my-10 md:mx-auto lg:mx-auto">
+                <div class="flex gap-2 justify-center  lg:gap-8 items-end">
+                    <img class=" w-20 md:w-36 lg:w-52  " src="./img/phone.png" alt="">
+                    <img class=" w-28 md:w-48 lg:w-72" src="./img/phone.png" alt="">
+                    <img class=" w-20 md:w-36 lg:w-52" src="./img/phone.png" alt="">
+                 </div>
+             </div>
+         </section>
+         
+    </header>
+     
+   <main class="w-full mt-28">
+    <!-- input part  -->
+    <div class="w-9/12 mx-auto text-center">
+        <h1 class="text-3xl font-bold mb-8">Search your phone</h1>
+        <input id="input-fields" type="text" placeholder="Search your phone" class=" rounded  w-full md:w-80 lg:w-96 py-2 outline-none bg-gray-100 px-3 " />
+        <button onclick="searchPhone()" class="py-2 text-white mt-5 md:mt-0 lg:mt-0 w-full lg:w-24 md:w-24 font-semibold bg-[#0D6EFD] rounded shadow-lg">Search</button>
+    </div>
+    <!-- input end -->
+    <!-- loading part  -->
+    <div class=" text-center my-10 hidden" id="loading">
+        <span class="loading text-success loading-dots loading-xs"></span>
+        <span class="loading text-success loading-dots loading-sm"></span>
+        <span class="loading text-success loading-dots loading-md"></span>
+        <span class="loading text-success loading-dots loading-lg"></span>
+    </div>
+    <section class="mt-20">
+        <div class="main w-9/12 gap-6 grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="card-container">
+        </div>
+    </section>
+
+     <div class="text-center mt-8">
+        <button class="px-8 py-2 text-white font-semibold bg-[#0D6EFD] rounded shadow-lg">Show All</button>
+     </div>
+   </main>
+   <!-- main end  -->
+   <!-- footer part  -->
+   <footer class="w-full mt-20 py-5 px-2 bg-[#0D6EFD0D]">
+    <div class="w-9/12 mx-auto mt-10 ">
+        <div class="lg:flex md:flex lg:justify-between md:justify-between py-10">
+            <!-- text div  -->
+            <div class="mb-7 md:mb-0 lg:mb-0 text-center">
+                <h1 class="text-3xl font-bold mb-1">Hot Gadgets</h1>
+                <p class="text-[#706F6F]">You can definitely work.</p>
+            </div>
+            <!-- icon button div -->
+            <div class="flex items-center space-x-5 justify-center">
+                <div>
+                    <span class="bg-white text-lg rounded-full p-1 text-[#3B599C] "><i class="fa-brands fa-facebook"></i></span>
+                    <span class="bg-white text-lg rounded-full p-1 text-[#58A7DE]" ><i class="fa-brands fa-twitter"></i></span>
+                    <span class="bg-white text-lg rounded-full p-1 text-orange-500"><i class="fa-brands fa-instagram"></i></span>
+                </div>
+                <div>
+                    <button class="px-6 py-2 text-white font-semibold bg-[#0D6EFD] rounded shadow-lg">Join Now</button>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <!-- main footer div -->
+        <div class="">
+            <div class=" grid grid-cols-2 gap-6 lg:flex md:flex md:justify-between lg:justify-between mt-10 py-8">
+                 <p class="space-y-7 font-semibold"> Product<br>
+                     Browse jobs<br>
+                     Remote jobs<br>
+                     Startup jobs<br>
+                     Company jobs<br>
+                </p>
+                 <p class="space-y-7 font-semibold">
+                     Popular <br>
+                     UIUX Design<br>
+                     Product Design<br>
+                     Back-End Developer<br>
+                     Front-End Developer<br>
+                </p>
+                 <p class="space-y-7 font-semibold">
+                     Resource<br>
+                     Faq<br>
+                     Support<br>
+                     Privacy Policy<br>
+                     Terms of Service<br>
+                </p>
+                 <p class="space-y-7 font-semibold">
+                     Company<br>
+                     About Us<br>
+                     Contact Us<br>
+                     Career Tips<br>
+                     Careers<br>
+                </p>
+            </div>
+        </div>
+    </div>
+   </footer>
+     <script src="index.js"></script>
+</body>
+</html>
